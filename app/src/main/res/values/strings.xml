@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kimlik</string>
+    <string name="ad">Ad</string>
+    <string name="soyad">Soyad</string>
+    <string name="dogumyeri">Dogum Yeri</string>
+    <string name="dogumtarihi">Dogum Tarihi</string>
+    <string name="kimlikno">Kimlik No</string>
+    <string name="telefonno">Telefon No</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="resim">Resim</string>
+    <string name="clear">Temizle</string>
+    <string name="ara">Ara</string>
+</resources>

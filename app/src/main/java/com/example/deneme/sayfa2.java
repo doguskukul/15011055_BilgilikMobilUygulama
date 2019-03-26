@@ -29,7 +29,7 @@ public class sayfa2 extends AppCompatActivity {
         String s3 = i.getStringExtra("mesaj3");
         String s4 = i.getStringExtra("mesaj4");
         String s5 = i.getStringExtra("mesaj5");
-        String s6 = i.getStringExtra("mesaj6");
+        String s6 = i.getStringExtra("mesaj7"); // TODO - 6 ya geri cevir
         textViewAd.setText(s);
         textView2.setText(s2);
         textView3.setText(s3);

@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("mesaj3",txtInput3.getText().toString());
                 i.putExtra("mesaj4",txtInput4.getText().toString());
                 i.putExtra("mesaj5",txtInput5.getText().toString());
-                i.putExtra("mesaj6",txtInput6.getText().toString());
+                i.putExtra("mesaj7",txtInput6.getText().toString()); // TODO - 6 ya geri cevir
                 startActivity(i);
             }
         });

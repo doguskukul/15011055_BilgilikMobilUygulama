@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
     EditText txtInput1,txtInput2,txtInput3,txtInput4,txtInput5,txtInput6;
     int counter;
     @Override
+    // Creation of the text fields and buttons.
+    // Called on App Start
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);

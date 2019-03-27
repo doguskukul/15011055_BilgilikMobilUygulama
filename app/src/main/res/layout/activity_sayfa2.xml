@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/ad2"
+            android:id="@+id/textName_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/ad"
@@ -20,7 +20,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/soyad2"
+            android:id="@+id/textSurname_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/soyad"
@@ -28,7 +28,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/kimlikno2"
+            android:id="@+id/textID_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
@@ -36,7 +36,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/tarih2"
+            android:id="@+id/textDate_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/dogumtarihi"
@@ -44,7 +44,15 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/yer2"
+            android:id="@+id/textYear_p2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yas"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textPlace_p2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/dogumyeri"
@@ -57,7 +65,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/telefonno2"
+                android:id="@+id/textPhone_p2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -66,7 +74,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/buttonCall_p2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

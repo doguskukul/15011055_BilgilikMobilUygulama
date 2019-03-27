@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         txtInputDate = (EditText) this.findViewById(R.id.editDate);
         txtInputPlace = (EditText) this.findViewById(R.id.editPlace);
         txtInputPhone = (EditText) this.findViewById(R.id.editPhone);
-        txtInputYear = (EditText) this.findViewById(R.id.editYear);
 
         if(savedInstanceState != null){
             String message = savedInstanceState.getString("msj");

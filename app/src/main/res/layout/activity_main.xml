@@ -8,13 +8,39 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/chooseButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_weight="0"
+            android:onClick="chooseImage"
+            app:srcCompat="@drawable/gallery"
+            tools:srcCompat="@drawable/gallery" />
+
+        <ImageView
+            android:id="@+id/imagePhoto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/avatarr"
+            tools:srcCompat="@drawable/avatarr" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:id="@+id/textName"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="@string/ad"
             android:textColor="@color/colorPrimary"
@@ -22,25 +48,24 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="Adınız"
             android:ems="10"
             android:hint="@string/ad"
-            android:inputType="textPersonName"
-            android:text="@string/ad"
-            android:autofillHints="Adınız"/>
+            android:inputType="textPersonName" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:id="@+id/textSurname"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_weight="0"
             android:text="@string/soyad"
@@ -48,13 +73,149 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editSurname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
+            android:autofillHints="Soyadınız"
             android:ems="10"
             android:hint="@string/soyad"
-            android:inputType="textPersonName"
-            android:text="@string/soyad" />
+            android:inputType="textPersonName" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textID"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/kimlikno"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="@string/kimlikno"
+            android:ems="10"
+            android:hint="@string/kimlikno"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/dogumtarihi"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:autofillHints="@string/dogumtarihi"
+            android:ems="10"
+            android:hint="@string/dogumtarihi"
+            android:inputType="date" />
+
+        <ImageButton
+            android:id="@+id/buttonCalendar"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/calendar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textPlace"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/dogumyeri"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:autofillHints="@string/dogumyeri"
+            android:ems="10"
+            android:hint="@string/dogumyeri"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textPhone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/telefonno"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/telefonno"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kaydet" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/clear" />
+    </LinearLayout>
+
 </LinearLayout>

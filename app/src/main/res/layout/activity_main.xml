@@ -8,6 +8,32 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/chooseButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_weight="0"
+            android:onClick="chooseImage"
+            app:srcCompat="@drawable/gallery"
+            tools:srcCompat="@drawable/gallery" />
+
+        <ImageView
+            android:id="@+id/imagePhoto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/avatarr"
+            tools:srcCompat="@drawable/avatarr" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -98,7 +124,7 @@
 
         <EditText
             android:id="@+id/editDate"
-            android:layout_width="250dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
             android:autofillHints="@string/dogumtarihi"
@@ -108,7 +134,7 @@
 
         <ImageButton
             android:id="@+id/buttonCalendar"
-            android:layout_width="44dp"
+            android:layout_width="43dp"
             android:layout_height="match_parent"
             android:layout_weight="0"
             app:srcCompat="@drawable/calendar" />

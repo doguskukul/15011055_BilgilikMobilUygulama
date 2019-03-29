@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Button;
 import android.view.View;
@@ -44,7 +45,7 @@ public class sayfa2 extends AppCompatActivity {
         int age=curYear-bYear;
         String age2 = String.valueOf(age);
         textViewYear.setText(age2);
-        Button buttonCall = (Button) this.findViewById(R.id.buttonCall_p2);
+        ImageButton buttonCall = (ImageButton) this.findViewById(R.id.buttonCall_p2);
         buttonCall.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent i2 = new Intent(Intent.ACTION_CALL);

@@ -4,6 +4,7 @@
     <string name="soyad">Soyad</string>
     <string name="dogumyeri">Dogum Yeri</string>
     <string name="dogumtarihi">Dogum Tarihi</string>
+    <string name="dogumtarihi2">Dogum Tarihinizi Seçiniz</string>
     <string name="kimlikno">Kimlik No</string>
     <string name="telefonno">Telefon No</string>
     <string name="kaydet">Kaydet</string>
@@ -11,4 +12,7 @@
     <string name="clear">Temizle</string>
     <string name="ara">Ara</string>
     <string name="yas">Yaşı</string>
+    <string name="dersler">Dersler</string>
+    <string name="dersismi">Ders ismi</string>
+    <string name="dersnotu">Ders notu</string>
 </resources>

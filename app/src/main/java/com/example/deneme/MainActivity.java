@@ -22,7 +22,7 @@ import java.io.InputStream;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-    EditText txtInputName,txtInputSurname,txtInputID,txtInputDate,txtInputPlace,txtInputPhone,txtInputYear;
+    EditText txtInputName,txtInputSurname,txtInputID,txtInputDate,txtInputPlace,txtInputPhone;
     int counter;
     String year2;
     @Override
@@ -35,9 +35,10 @@ public class MainActivity extends AppCompatActivity {
         txtInputName = (EditText) this.findViewById(R.id.editName);
         txtInputSurname = (EditText) this.findViewById(R.id.editSurname);
         txtInputID = (EditText) this.findViewById(R.id.editID);
-        txtInputDate = (EditText) this.findViewById(R.id.editDate);
+        txtInputDate = (EditText) this.findViewById(R.id.editDate);z
         txtInputPlace = (EditText) this.findViewById(R.id.editPlace);
         txtInputPhone = (EditText) this.findViewById(R.id.editPhone);
+        txtInputDate.setKeyListener(null);
 
         if(savedInstanceState != null){
             String message = savedInstanceState.getString("msj");

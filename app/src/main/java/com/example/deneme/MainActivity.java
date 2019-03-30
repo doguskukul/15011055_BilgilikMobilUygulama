@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         txtInputName = (EditText) this.findViewById(R.id.editName);
         txtInputSurname = (EditText) this.findViewById(R.id.editSurname);
         txtInputID = (EditText) this.findViewById(R.id.editID);
-        txtInputDate = (EditText) this.findViewById(R.id.editDate);z
+        txtInputDate = (EditText) this.findViewById(R.id.editDate);
         txtInputPlace = (EditText) this.findViewById(R.id.editPlace);
         txtInputPhone = (EditText) this.findViewById(R.id.editPhone);
         txtInputDate.setKeyListener(null);

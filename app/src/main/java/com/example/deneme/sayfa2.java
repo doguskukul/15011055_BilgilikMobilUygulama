@@ -57,5 +57,13 @@ public class sayfa2 extends AppCompatActivity {
                 startActivity(i2);
             }
         });
+        Button buttonToCourses = (Button) this.findViewById(R.id.buttonCourses);
+        buttonToCourses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i3 = new Intent(sayfa2.this,sayfa3.class);
+                startActivity(i3);
+            }
+        });
     }
 }

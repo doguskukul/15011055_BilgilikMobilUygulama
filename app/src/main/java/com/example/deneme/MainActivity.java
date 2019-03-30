@@ -141,7 +141,8 @@ public class MainActivity extends AppCompatActivity {
                     Bitmap bitmap= BitmapFactory.decodeStream(stream);
                     ImageView iv=findViewById(R.id.imagePhoto);
                     iv.setImageBitmap(bitmap);
-                } catch (FileNotFoundException e) {
+                }
+                catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
 

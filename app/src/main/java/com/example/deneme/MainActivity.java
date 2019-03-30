@@ -26,9 +26,6 @@ public class MainActivity extends AppCompatActivity {
     int counter;
     String year2;
     @Override
-    // Gorsel güzelleştirme yapılacak
-    // Creation of the text fields and buttons.
-    // Called on App Start
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);

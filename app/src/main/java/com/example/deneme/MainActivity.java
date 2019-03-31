@@ -22,13 +22,10 @@ import java.io.InputStream;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-    EditText txtInputName,txtInputSurname,txtInputID,txtInputDate,txtInputPlace,txtInputPhone,txtInputYear;
+    EditText txtInputName,txtInputSurname,txtInputID,txtInputDate,txtInputPlace,txtInputPhone;
     int counter;
     String year2;
     @Override
-    // Gorsel güzelleştirme yapılacak
-    // Creation of the text fields and buttons.
-    // Called on App Start
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -38,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         txtInputDate = (EditText) this.findViewById(R.id.editDate);
         txtInputPlace = (EditText) this.findViewById(R.id.editPlace);
         txtInputPhone = (EditText) this.findViewById(R.id.editPhone);
+        txtInputDate.setKeyListener(null);
 
         if(savedInstanceState != null){
             String message = savedInstanceState.getString("msj");

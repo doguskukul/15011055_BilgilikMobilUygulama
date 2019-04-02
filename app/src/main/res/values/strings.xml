@@ -15,4 +15,6 @@
     <string name="dersler">Dersler</string>
     <string name="dersismi">Ders ismi</string>
     <string name="dersnotu">Ders notu</string>
+    <string name="kullanıcıAdi">Kullanıcı Adı</string>
+    <string name="sifre">Şifre</string>
 </resources>

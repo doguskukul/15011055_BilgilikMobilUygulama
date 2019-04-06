@@ -1,10 +1,12 @@
 package com.example.deneme;
 
 public class Ders {
-    private String isim,not;
-    public Ders(String isim,String not){
+    private String isim,not,ogretmen,kredi;
+    public Ders(String isim,String not,String ogretmen,String kredi){
         this.isim=isim;
         this.not=not;
+        this.ogretmen=ogretmen;
+        this.kredi=kredi;
     }
     public String isimAl(){
         return isim;
@@ -18,5 +20,8 @@ public class Ders {
     public void notDuzenle(String not){
         this.not=not;
     }
-
+    public String ogretmenAl () {return ogretmen;}
+    public void ogretmenDuzenle (String ogretmen){this.ogretmen=ogretmen;}
+    public String krediAl () {return kredi;}
+    public void kredi (String ogretmen){this.kredi=kredi;}
 }

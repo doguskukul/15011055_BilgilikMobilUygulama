@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kimlik</string>
+    <string name="app_name">Bilgilik</string>
     <string name="ad">Ad</string>
     <string name="soyad">Soyad</string>
     <string name="dogumyeri">Dogum Yeri</string>
@@ -17,4 +17,10 @@
     <string name="dersnotu">Ders notu</string>
     <string name="kullanıcıAdi">Kullanıcı Adı</string>
     <string name="sifre">Şifre</string>
+    <string name="email">Email</string>
+    <string name="dersadi">Dersin Adı</string>
+    <string name="not">Alınan Not</string>
+    <string name="ogretmen">Dersin Öğretmeni</string>
+    <string name="kredi">Dersin Kredisi</string>
+
 </resources>

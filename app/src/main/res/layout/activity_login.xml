@@ -8,75 +8,71 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="786dp"
         android:background="@drawable/arkaplan"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/txtLoginID"
-            android:layout_width="186dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="220dp"
-            android:layout_marginBottom="81dp"
+            android:layout_width="192dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="245dp"
+            android:layout_marginEnd="110dp"
+            android:layout_marginRight="110dp"
             android:ems="10"
             android:hint="@string/kullanıcıAdi"
+            android:singleLine="true"
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimaryDark"
             android:textSize="18sp"
-            android:singleLine="true"
-            app:layout_constraintBottom_toTopOf="@+id/imageButtonDevam"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/txtLoginPW"
-            android:layout_width="186dp"
+            android:layout_width="193dp"
             android:layout_height="41dp"
-            android:layout_marginBottom="463dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="13dp"
             android:ems="10"
             android:hint="@string/sifre"
+            android:singleLine="true"
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimaryDark"
             android:textColorLink="@color/colorAccent"
-            android:singleLine="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLoginID"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@+id/txtLoginID" />
 
         <ImageButton
             android:id="@+id/imageButtonDevam"
-            android:layout_width="90dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginEnd="9dp"
-            android:layout_marginRight="9dp"
-            android:layout_marginBottom="415dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageButtonTemizle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtLoginID"
-            app:srcCompat="@drawable/devam" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLoginPW" />
+
 
         <ImageButton
             android:id="@+id/imageButtonTemizle"
-            android:layout_width="90dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="100dp"
-            android:layout_marginRight="100dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButtonDevam"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButtonDevam"
-            app:layout_constraintTop_toTopOf="@+id/imageButtonDevam"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/temizle" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLoginPW" />
+
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

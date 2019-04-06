@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(txtLoginID.getText().toString().compareTo(ID)==0 && txtLoginPW.getText().toString().compareTo(PW)==0){
-                    Intent i = new Intent(LoginActivity.this,MainActivity.class);
+                    Intent i = new Intent(LoginActivity.this, FormActivity.class);
                     startActivity(i);
                 }
                 else{

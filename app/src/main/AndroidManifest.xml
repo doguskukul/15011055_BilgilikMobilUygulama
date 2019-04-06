@@ -11,8 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DersInfo"></activity>
-        <activity android:name=".FormActivity" />
         <activity android:name=".NoteActivity" />
+        <activity android:name=".InformationActivity" />
+        <activity android:name=".FormActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InformationActivity" />
     </application>
 
 </manifest>

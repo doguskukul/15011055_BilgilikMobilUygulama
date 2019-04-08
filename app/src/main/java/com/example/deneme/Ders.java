@@ -7,6 +7,7 @@ public class Ders {
         this.not=not;
         this.ogretmen=ogretmen;
         this.kredi=kredi;
+        //değişebilir
     }
     public String isimAl(){
         return isim;

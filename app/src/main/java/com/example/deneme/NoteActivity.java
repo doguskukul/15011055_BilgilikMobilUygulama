@@ -57,5 +57,6 @@ public class NoteActivity extends AppCompatActivity {
         }
         MyAdapter mAdapter = new MyAdapter(input);
         recyclerView.setAdapter(mAdapter);
+        //adapter
     }
 }
